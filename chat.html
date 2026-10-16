@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Чат — TaskMarket</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">TaskMarket</a></h1>
+      <nav>
+        <a href="index.html">Головна</a>
+        <a href="create.html">Створити проєкт</a>
+        <a href="profile.html">Профіль</a>
+        <a href="chat.html">Чат</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Чат з виконавцем</h2>
+    <div id="chat-window" class="chat-window"></div>
+    <form id="chat-form" class="chat-form">
+      <input id="chat-input" placeholder="Написати повідомлення..." autocomplete="off" />
+      <button class="btn" type="submit">Відправити</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

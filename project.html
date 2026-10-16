@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Проєкт — TaskMarket</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">TaskMarket</a></h1>
+      <nav>
+        <a href="index.html">Головна</a>
+        <a href="create.html">Створити проєкт</a>
+        <a href="profile.html">Профіль</a>
+        <a href="chat.html">Чат</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="project-detail">
+      <h2 id="project-title">[Назва проєкту]</h2>
+      <div class="meta">
+        <span id="project-budget">Бюджет: €200</span>
+        <span id="project-deadline">Дедлайн: 7 днів</span>
+      </div>
+      <p id="project-desc">Опис проєкту...</p>
+
+      <div class="actions">
+        <button id="apply-btn" class="btn">Подати заявку</button>
+        <a href="chat.html" class="btn alt">Почати чат</a>
+      </div>
+
+      <section>
+        <h4>Заявки</h4>
+        <ul id="bids" class="list"></ul>
+      </section>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

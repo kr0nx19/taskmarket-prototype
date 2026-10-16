@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Створити проєкт — TaskMarket</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">TaskMarket</a></h1>
+      <nav>
+        <a href="index.html">Головна</a>
+        <a href="create.html">Створити проєкт</a>
+        <a href="profile.html">Профіль</a>
+        <a href="chat.html">Чат</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Створити проєкт</h2>
+    <form id="create-form" class="form">
+      <label>Назва
+        <input name="title" required />
+      </label>
+      <label>Опис
+        <textarea name="desc" rows="5" required></textarea>
+      </label>
+      <label>Бюджет (€)
+        <input name="budget" type="number" min="1" required />
+      </label>
+      <label>Дедлайн (дні)
+        <input name="deadline" type="number" min="1" required />
+      </label>
+      <button class="btn" type="submit">Опублікувати</button>
+    </form>
+    <div id="create-feedback"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
